@@ -1,0 +1,8 @@
+name: Hello
+on: push
+jobs: 
+  hello:                         # このジョブを hello という名前で定義
+    runs-on: ubuntu-latest       # このジョブをどのOS環境で実行するか
+    steps: 
+      - run: echo "Hello, world"  # シェルコマンドを実行する
+      - uses: actions/checkout@v4
